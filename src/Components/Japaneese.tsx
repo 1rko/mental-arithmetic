@@ -1,4 +1,4 @@
-//Рассчет Японских чисел--------------------------------------------
+// Рассчет Японских чисел--------------------------------------------
 
 import React, {useState} from "react";
 import styles from '../Components/Japaneese.module.css'
