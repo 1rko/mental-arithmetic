@@ -54,10 +54,13 @@ export const Japaneese = React.memo(() => {
 // --------------------------------------------Рассчет Японских чисел
 
     return <>
-        <button onClick={onResultButtonClickHandler}>рассчитать</button>
-        <BonesBox bonesPosition={resultObject.result}/>
+        <div className={styles.wrapper}>
+            <button className={styles.countButton} onClick={onResultButtonClickHandler}>рассчитать</button>
+            <BonesBox bonesPosition={resultObject.result}/>
+        </div>
     </>
 })
+
 type BonesBoxType = { bonesPosition: number }
 
 export const BonesBox = React.memo((props: BonesBoxType = {bonesPosition: 4}) => {
@@ -72,9 +75,10 @@ export const BonesBox = React.memo((props: BonesBoxType = {bonesPosition: 4}) =>
         }
     }
 
-    return <div className={styles.box}>
+    return <div className={styles.bonesContainer}>
         <span>{res}</span>
     </div>
+
 })
 
 export const Bone = React.memo((props: any) => {

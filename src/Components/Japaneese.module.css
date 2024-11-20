@@ -1,34 +1,58 @@
-.box{
-    padding: 50px;
-    display: inline-block;
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     background-color:burlywood;
+    border: 1px solid blue;
+    width: 50%;
+    height: auto;
+}
+
+.countButton{
+    display: block;
+    width: auto;
+    height: 20px;
+}
+
+.bonesContainer{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: 150px;
     border: 1px solid cadetblue;
 }
 
 .bone{
     border: 1px solid cadetblue;
-    background-color: aquamarine;
-    height: 30px;
-    width:50px;
     position: relative;
-    top:30px;
+    background: url("../Common/images/bone2.png") ;
+    width:40px;
+    height: 20px;
 }
 
 .up{
     border: 1px solid cadetblue;
-    background-color: aquamarine;
-    height: 30px;
-    width:50px;
+    background: url("../Common/images/bone2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     position: relative;
     top:0px;
+    width:40px;
+    height: 20px;
 }
 
 .down{
     border: 1px solid cadetblue;
-    background-color: aquamarine;
-    height: 30px;
-    width:50px;
+    background: url("../Common/images/bone2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width:40px;
+    height: 20px;
     position: relative;
     top:30px;
 }
