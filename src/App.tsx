@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes, Navigate} from 'react-router-dom'
 import './App.css';
 import {Japaneese} from "./Components/Japaneese";
 import {FeedbackForm} from "./Components/FeedbackForm";
@@ -13,7 +13,7 @@ function App() {
             <Routes>
                 <Route path="/japaneese/*" element={<Japaneese/>}/>
                 <Route path="/feedbackForm/*" element={<FeedbackForm/>}/>
-                <Route path="*" element={<div>404 Not Found</div>}/>
+                <Route path="*" element={<Navigate to="/japaneese"/>}/>
             </Routes>
         </div>
 
