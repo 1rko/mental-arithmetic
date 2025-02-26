@@ -27,15 +27,15 @@
 }
 
 .bone{
-    border: 1px solid cadetblue;
     position: relative;
     background: url("../Common/images/bone2.png") ;
     width:40px;
     height: 20px;
 }
 
+/*В классах .up и .down - дублирование, разобраться со стилями*/
+
 .up{
-    border: 1px solid cadetblue;
     background: url("../Common/images/bone2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -46,7 +46,6 @@
 }
 
 .down{
-    border: 1px solid cadetblue;
     background: url("../Common/images/bone2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
